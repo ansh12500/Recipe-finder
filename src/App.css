@@ -1,0 +1,203 @@
+h1, h2, h3, p{
+  margin: 0;
+}
+
+
+.title{
+  padding: 2vh;
+  text-align: center;
+}
+
+.title a{
+  color: black;
+  text-decoration: none;
+}
+
+.search-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 4vh 0 4vh;
+}
+
+.search-bar{
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 10px;
+  height: 3vh;
+  width: 35vh;
+  margin-right: 10px;
+  padding-left: 1vh;
+}
+
+.search-bar:focus{
+  outline-color: rgb(238, 224, 208);
+}
+
+.search-button{
+  background-color: rgb(241, 191, 126);
+  border: none;
+  border-radius: 10px;
+  width: 8vh;
+  height: 4vh;
+  transition: background-color .5s ease;
+}
+
+.search-button:hover{
+  background-color: rgb(250, 162, 46);
+}
+
+.search-button:focus{
+  outline: none;
+}
+
+.recipe-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe{
+  background:rgb(246, 211, 165);
+  border-radius: 10px;
+  box-shadow: 0 0.5px 8px  rgb(250, 162, 46);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1vh;
+  margin: 2vh;
+  width: 30vh;
+  height: 35vh;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.recipe:hover{
+  opacity: 1;
+}
+
+.recipe h1{
+  font-size: 2vh;
+}
+
+.recipe h3{
+  font-size: 1.7vh;
+}
+
+.recipe-img{
+  align-self: center;
+  padding: 1vh;
+  width: 15vh;
+  border-radius: 50%;
+}
+
+.recipe-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recipe-info a{
+  color: black;
+}
+
+.default{
+  padding-top: 10vh;
+  color: rgb(141, 140, 140);
+  text-align: center;
+}
+
+#edamam-badge{
+  padding: 4vh;
+  display: flex;
+  justify-content: center;
+}
+
+#edamam-badge img{
+  opacity: 0.7;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+#edamam-badge img:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.search-form-filters{
+  animation: fadeIn .5s ease 1 forwards;
+  opacity: 0;
+  margin-top: 1vh;
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(228, 228, 228);
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+.search-form-filters p{
+  font-size: 1.5vh;
+  color:rgb(104, 104, 104)
+}
+
+.search-filter {
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 6px;
+  display: inherit;
+  justify-content: center;
+  width: 6vh;
+  margin: 0.5vh;
+  padding-left:0.5vh
+}
+
+.button-filter{
+  height: 3vh;
+  border-radius: 10px;
+  background:rgb(246, 211, 165);
+  border: 1px solid rgb(248, 200, 136);
+  transition: background-color .5s ease;
+}
+
+.button-filter:hover{
+  background:rgb(255, 206, 141);
+}
+
+.button-filter:focus{
+  outline: none;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+ul li{
+  padding:1vh;
+}
+li a{
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+
+.filters{
+  display: flex;
+  justify-content: center;
+  color: grey;
+  padding: 2vh;
+  flex-direction: column;
+  align-items: center;
+}
